@@ -10,7 +10,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class SecondActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,5 +17,6 @@ public class SecondActivity extends AppCompatActivity {
         Button backButton = findViewById(R.id.BackButton);
         backButton.setOnClickListener(v -> finish());
     }
+
 
 }

@@ -49,17 +49,29 @@ fun Greeting(name: String, modifier: Modifier = Modifier, id: String, context: C
             Text(
                 text = "Hi, my name is $name!\nMy ID is $id"
             )
+
+            //Button 1
             Button(onClick = {
                 val intent = Intent(context, SecondActivity::class.java)
                 context.startActivity(intent)
             }) {
-                Text(text = "Go to Second Activity, Explicitly")
+                Text(text = "Start Activity Explicitly")
             }
+
+            //Button 2
             Button(onClick = {
                 val intent = Intent("com.example.wirriesassignment2.VIEW_SECOND")
                 context.startActivity(intent)
             }) {
-                Text("Go to Second Activity Implicitly")
+                Text("Start Activity Implicitly")
+            }
+
+            //Button 3 -> Camera activity
+            Button(onClick = {
+                val intent = Intent(context, ThirdActivity::class.java)
+                context.startActivity(intent)
+            }) {
+                Text(text = "View Image Activity")
             }
         }
     }
