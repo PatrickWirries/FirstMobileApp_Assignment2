@@ -41,6 +41,9 @@ android {
 
 dependencies {
 
+
+//    implementation("androidx.fragment:fragment-ktx:${1.8}")
+//    implementation("androidx.activity:activity-ktx:${1.12}")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
